@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <header class="header" id="header">
+        iNotes
+    </header>
+    <main class="main">
+        <div class="inputContainer" id="inputContainer">
+            <p id="button" class="button">
+                <button onclick="saveNotes()" id="saveButton">Save</button>
+                <button onclick="closeContainer()" id="closeButton">x</button>
+            </p>
+            
+            <p>Title</p>
+            <input type="text" placeholder="Title..." id="titleInput" >
+            <p>Main notes</p>
+            <textarea name="mainNotes" id="mainNotes" cols="30" rows="10" placeholder="Write some notes here..."></textarea>
+        </div>
+        <div class="notesContainer" id="notesContainer">
+            <button class="createButton" id="createButton" onclick="createButton()">+</button>
+        </div>
+        
+    </main>
+    
+
+    <script src="notes.js"></script>
+</body>
+</html>
